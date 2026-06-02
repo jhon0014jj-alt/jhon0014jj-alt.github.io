@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Juego Piedra Papel o Tijera </title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <!-- Logo -->
+    <div class="logo">
+      <img src="img/logo.webp" alt="Logo">
+    </div>
+
+<div class="inicio">
+
+  <div class="texto">
+  <h1>Piedra Papel o Tijera</h1>
+
+<div class="campo-juego">
+
+<div class="lado">
+  <h2>Jugador</h2>
+  <div id="jugadorCaja">
+    <img id="jugadorImg" src="img/usuario.jpg" alt="">
+  </div>
+</div>
+
+  <h1>VS</h1>
+
+  <div class="lado">
+    <h2>PC</h2>
+    <div id="pcCaja">Cargando...</div>
+  </div>
+
+</div>
+
+  <h2>Elige una opcion:</h2>
+
+<div class="opciones">
+
+<button onclick="jugar('piedra')">
+  <video id="btnPiedra" loop muted playsinline width="100">
+    <source src="img/piedra.mp4" type="video/mp4">
+  </video>
+</button>
+
+<button onclick="jugar('papel')">
+  <video id="btnPapel" loop muted playsinline width="100">
+    <source src="img/papel.mp4" type="video/mp4">
+  </video>
+</button>
+
+<button onclick="jugar('tijera')">
+  <video id="btnTijera" loop muted playsinline width="100">
+    <source src="img/tijera.mp4" type="video/mp4">
+  </video>
+</button>
+
+</div>
+
+  <h2 id="resultado"></h2>
+
+  <div id="popup" class="popup">
+
+  <div class="popup-contenido">
+
+    <img id="imagenResultado" width="200">
+
+    <audio id="sonidoResultado"></audio>
+
+    <h2 id="mensajePopup"></h2>
+
+    <button onclick="cerrarPopup()">Cerrar</button>
+
+  </div>
+
+</div>
+
+  <a href="Menu.html">
+    <button>Volver al inicio</button>
+  </a>
+
+ </div>
+
+</div>
+
+<footer>
+  © 2026 Universidad Salesiana de Bolivia - Ingenieria en Sistemas 1er Semestre
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
