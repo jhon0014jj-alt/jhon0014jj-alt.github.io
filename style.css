@@ -1,0 +1,278 @@
+body{
+  text-align: center;
+  font-family: Arial;
+  background:url(img/Universidad.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.opciones{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.opciones button{
+  background: transparent;
+  border: none;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 15px;
+}
+
+.opciones video{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+.opciones button:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 15px;
+  position: relative;
+}
+
+
+button img{
+  width: 100px;
+  display: block;
+}
+
+button:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+h2{
+  margin-top: 20px;
+}
+
+.inicio{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.inicio h1{
+  margin-bottom: 10px;
+}
+
+.inicio p{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.inicio a{
+  text-decoration: none;
+}
+
+.inicio a button{
+  background: #000000;
+  color: white;
+  font-size: 20px;
+  padding: 20px 40px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.inicio{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 85vh;
+  margin-top: 0;
+  padding: 20px;
+}
+
+.texto{
+  text-align: center;
+}
+
+.texto h1{
+  margin-bottom: 10px;
+  font-size: 45px;
+  margin-top: 5px;
+}
+
+.texto p{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.slider{
+  width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.slides img{
+  display: none;
+
+  width: 250px;
+  height: 220px;
+
+  object-fit: cover;
+  border-radius: 15px;
+
+  opacity: 0.5;
+  filter: blur(2px);
+
+  transition: 0.5s;
+}
+
+.slides img.activo{
+  display: block;
+
+  width: 450px;
+  height: 250px;
+
+  opacity: 1;
+  filter: blur(0);
+}
+
+.slides img.lado{
+  display: block;
+}
+
+.logo{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img{
+  width: 180px;
+}
+
+.inicio a{
+  text-decoration: none;
+}
+
+.inicio button{
+  background: transparent;
+  font-size: 20px;
+  padding: 15px 35px;
+  border-radius: 12px;
+  margin-top: 25px;
+}
+
+.campo-juego{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin: 30px;
+}
+
+.lado{
+  text-align: center;
+}
+
+.lado img{
+  width: 120px;
+}
+
+#jugadorCaja,
+#pcCaja{
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+#jugadorCaja video, 
+#pcCaja video{ 
+  width: 180px; 
+  height: 180px; 
+  object-fit: contain; 
+  border-radius: 10px; 
+} 
+
+#jugadorCaja video,
+#pcCaja video,
+.opciones video{
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.opciones{
+  margin-top: 20px;
+}
+
+footer{
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 9999;
+}
+
+.popup-contenido{
+  background: white;
+  width: 350px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.popup-contenido button{
+  background: #4473a3;
+  color: white;
+  font-size: 18px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.popup video{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.popup img{
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+footer {
+  height: 20px;
+  background-color: #20409767;
+}
